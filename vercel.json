@@ -1,0 +1,11 @@
+{
+  "installCommand": "cd gestalt-demo && npm install",
+  "buildCommand": "cd gestalt-demo && npm run build",
+  "outputDirectory": "gestalt-demo/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
