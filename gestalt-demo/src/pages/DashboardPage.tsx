@@ -15,7 +15,7 @@ export default function DashboardPage() {
           <div className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Overview</div>
           <h1 className="mt-3 text-[34px] font-semibold tracking-[-0.06em] text-foreground">Outbound operating system</h1>
           <p className="mt-2 max-w-[720px] text-[15px] text-muted-foreground">
-            A convincing demo surface for signal-led targeting, messaging, launch readiness, and AI-assisted optimization.
+            Signal-first targeting, multi-channel sequencing, and AI-guided optimization — all in one workspace.
           </p>
         </div>
         <Link to={`/app/campaigns/${campaigns[0].id}`}>

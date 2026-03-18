@@ -29,7 +29,7 @@ export default function AnalyticsPage() {
         <div className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Analytics</div>
         <h1 className="mt-3 text-[34px] font-semibold tracking-[-0.06em] text-foreground">Performance by angle and signal</h1>
         <p className="mt-2 max-w-[760px] text-[15px] text-muted-foreground">
-          Enough measurement to make the fake product feel grounded: reply-rate motion, winning angles, and a plausible story about why.
+          Reply-rate trends, winning message angles, and send performance — everything you need to refine your outbound motion.
         </p>
       </div>
 

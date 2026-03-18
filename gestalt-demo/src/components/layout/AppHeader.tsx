@@ -99,8 +99,11 @@ export function AppHeader({ routeKey, currentCampaignName, onOpenNav, onOpenAI }
           <Button variant="ghost" size="icon" className="xl:hidden" onClick={onOpenAI}>
             <Wand2 className="h-4 w-4" />
           </Button>
-          <Button size="sm" className="rounded-full px-4">
+          <Button size="sm" className="relative rounded-full px-4">
             Launch
+            <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-emerald-400 text-[9px] font-bold text-white shadow-sm">
+              ✓
+            </span>
           </Button>
         </div>
       </div>

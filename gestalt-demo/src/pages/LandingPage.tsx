@@ -30,7 +30,6 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="hidden items-center gap-2 lg:flex">
-            <TagPill label="Fake Demo Phase" tone="violet" />
             <Link to="/app">
               <Button variant="secondary" size="sm" className="rounded-full px-4">
                 Open workspace
@@ -46,14 +45,14 @@ export default function LandingPage() {
               Make outbound feel like a sharp operating system, not a spreadsheet ritual.
             </h1>
             <p className="mt-6 max-w-[660px] text-[17px] leading-8 text-muted-foreground">
-              Gestalt turns expansion signals, inbox infrastructure, sequencing, and AI guidance into one convincing command
-              surface. In this phase, the backend is fake. The product experience is not.
+              Gestalt turns expansion signals, inbox infrastructure, sequencing, and AI guidance into one unified command
+              surface — so your team can operate outbound, not manage it.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link to={`/app/campaigns/${primaryCampaign.id}`}>
                 <Button className="w-full rounded-full px-6 sm:w-auto">
-                  Launch the flagship demo
+                  Open campaign workspace
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
@@ -64,7 +63,7 @@ export default function LandingPage() {
               </Link>
             </div>
 
-            <div className="mt-10 grid gap-4 sm:grid-cols-3">
+            <div className="mt-10 grid gap-4 md:grid-cols-3">
               <div className="surface-soft p-4">
                 <div className="flex items-center gap-2 text-[13px] font-semibold text-foreground">
                   <Users className="h-4 w-4 text-primary" />
@@ -84,10 +83,10 @@ export default function LandingPage() {
               <div className="surface-soft p-4">
                 <div className="flex items-center gap-2 text-[13px] font-semibold text-foreground">
                   <BarChart3 className="h-4 w-4 text-primary" />
-                  Demo promise
+                  Time to value
                 </div>
-                <div className="mt-3 text-[28px] font-semibold tracking-[-0.05em] text-foreground">30 sec</div>
-                <div className="mt-1 text-[12px] text-muted-foreground">Immediate product clarity</div>
+                <div className="mt-3 text-[28px] font-semibold tracking-[-0.05em] text-foreground">Instant</div>
+                <div className="mt-1 text-[12px] text-muted-foreground">AI-guided from first session</div>
               </div>
             </div>
           </div>
@@ -101,11 +100,11 @@ export default function LandingPage() {
                     <Sparkles className="h-4 w-4" />
                   </div>
                   <div>
-                    <div className="text-[14px] font-semibold">CampaignOS</div>
-                    <div className="text-[12px] text-muted-foreground">Flagship demo workspace</div>
+                    <div className="text-[14px] font-semibold">Gestalt</div>
+                    <div className="text-[12px] text-muted-foreground">Q1 Enterprise workspace</div>
                   </div>
                 </div>
-                <TagPill label="Near-exact shell" tone="teal" />
+                <TagPill label="Active workspace" tone="teal" />
               </div>
 
               <div className="grid gap-4 xl:grid-cols-[220px_1fr_300px]">
@@ -141,13 +140,13 @@ export default function LandingPage() {
                       <div className="text-[12px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
                         Audience definition
                       </div>
-                      <p className="mt-3 text-[14px] leading-6 text-foreground">{primaryCampaign.audience.targetPersona}</p>
+                      <p className="mt-3 line-clamp-3 text-[13px] leading-5 text-foreground">{primaryCampaign.audience.targetPersona}</p>
                     </div>
                     <div>
                       <div className="text-[12px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
                         Estimated reach
                       </div>
-                      <div className="mt-3 text-[36px] font-semibold tracking-[-0.06em] text-primary">
+                      <div className="mt-3 text-[32px] font-semibold tracking-[-0.06em] text-primary">
                         {primaryCampaign.matchCount.toLocaleString()}
                       </div>
                     </div>
@@ -170,8 +169,8 @@ export default function LandingPage() {
                         <Sparkles className="h-4 w-4" />
                       </div>
                       <div>
-                        <div className="text-[14px] font-semibold">AI Assistant</div>
-                        <div className="text-[12px] text-muted-foreground">Flagship campaign help</div>
+                        <div className="text-[14px] font-semibold">Gestalt Agent</div>
+                        <div className="text-[12px] text-muted-foreground">Campaign intelligence</div>
                       </div>
                     </div>
                   </div>

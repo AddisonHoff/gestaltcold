@@ -174,7 +174,7 @@ export default function CampaignDetailPage() {
         <div className="mb-5">
           <h2 className="text-[24px] font-semibold tracking-[-0.04em] text-foreground">Launch Plan</h2>
           <p className="mt-2 text-[14px] text-muted-foreground">
-            Mock operational readiness across inbox pools, send pacing, and channel mix.
+            Operational readiness across inbox pools, send pacing, and channel mix.
           </p>
         </div>
         <div className="grid gap-4 md:grid-cols-2">
@@ -227,7 +227,7 @@ export default function CampaignDetailPage() {
       >
         <div className="mb-5">
           <h2 className="text-[24px] font-semibold tracking-[-0.04em] text-foreground">Assets</h2>
-          <p className="mt-2 text-[14px] text-muted-foreground">The demo includes enough collateral to make the launch feel credible.</p>
+          <p className="mt-2 text-[14px] text-muted-foreground">All assets are reviewed, versioned, and ready to attach to your launch sequence.</p>
         </div>
         <div className="grid gap-4 md:grid-cols-3">
           {campaign.assets.map((asset) => (

@@ -129,7 +129,7 @@ export function AppRail({
             <div className="rounded-[22px] border border-border bg-white p-4 shadow-[0_18px_35px_rgba(15,23,42,0.04)]">
               <div className="text-[13px] font-semibold text-foreground">Campaign Settings</div>
               <p className="mt-2 text-[12px] leading-5 text-muted-foreground">
-                Demo-only controls for launch readiness, send caps, and asset completeness.
+                Manage launch readiness, send caps, and asset completeness before going live.
               </p>
             </div>
           </div>
@@ -164,10 +164,13 @@ export function AppRail({
               );
             })}
           </nav>
-          <div className="mt-8 rounded-[22px] border border-border bg-white p-4 shadow-[0_18px_35px_rgba(15,23,42,0.04)]">
-            <div className="text-[13px] font-semibold text-foreground">Fake it till you make it</div>
+          <div className="mt-8 rounded-[22px] border border-primary/10 bg-primary/[0.03] p-4 shadow-[0_18px_35px_rgba(15,23,42,0.04)]">
+            <div className="flex items-center gap-2 text-[13px] font-semibold text-foreground">
+              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+              Gestalt Agent
+            </div>
             <p className="mt-2 text-[12px] leading-5 text-muted-foreground">
-              This app is intentionally optimized for a convincing demo flow: strong UI, tight copy, mocked systems.
+              Your AI agent is monitoring signals, sequencing health, and audience fit in real time.
             </p>
           </div>
         </div>

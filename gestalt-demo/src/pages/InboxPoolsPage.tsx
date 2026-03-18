@@ -19,7 +19,7 @@ export default function InboxPoolsPage() {
         <div className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Launch Plan</div>
         <h1 className="mt-3 text-[34px] font-semibold tracking-[-0.06em] text-foreground">Inbox coverage and launch readiness</h1>
         <p className="mt-2 max-w-[760px] text-[15px] text-muted-foreground">
-          Even in fake-demo mode, the infrastructure story needs to feel coherent: healthy pools, realistic send caps, and a clear launch path.
+          Monitor inbox health, deliverability, and send capacity across your active pools.
         </p>
       </div>
 

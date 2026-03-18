@@ -129,8 +129,8 @@ const makeInsightThread = (
   body: string,
   actions: string[],
 ): AIThreadState => ({
-  modeLabel: "Agent Mode",
-  modelLabel: "claude-4-sonnet",
+  modeLabel: "Gestalt Agent",
+  modelLabel: "claude-sonnet-4-5",
   summary,
   blocks: [
     {
@@ -170,7 +170,7 @@ export const landingFeatures: LandingFeature[] = [
   {
     id: "assistant",
     title: "Chat-driven control plane",
-    description: "Use AI to refine signals, edit copy, and launch a convincing workflow without a real backend behind it yet.",
+    description: "Use Gestalt Agent to refine signals, sharpen copy, and optimize your sequence before launch.",
   },
 ];
 
@@ -480,7 +480,7 @@ export const primaryCampaign: Campaign = {
       bodyPreview:
         "Call note: hiring + funding combo, likely revops complexity emerging. Mention we help teams launch signal-based outbound systems fast.",
       aiThread: makeInsightThread(
-        "The call step is positioned correctly for a fake demo.",
+        "The call step is timed to follow LinkedIn engagement, giving reps a warm reason to reach out.",
         "Call script direction",
         "Keep this short and tactical. The strongest framing is: saw the change, understand the operational pain, can share patterns quickly.",
         ["Write talk track", "Create voicemail version", "Add objection handling"],
@@ -511,6 +511,53 @@ export const campaigns: Campaign[] = [
     subtitle: "Targeting funded teams rebuilding routing, ownership, and forecasting",
     updatedAgo: "Last edited 14 min ago",
     matchCount: 1916,
+    sequence: [
+      {
+        id: "sc-step-1",
+        channel: "Email",
+        title: "Funding congrats — ops angle",
+        dayLabel: "Day 1",
+        description: "Lead with the operational complexity that follows a Series C raise, not congratulations.",
+        bodyPreview:
+          "Hi [First Name], saw the raise — congrats. In our experience, the 90 days after a Series C are when routing, forecasting, and pipeline hygiene quietly start breaking. Happy to share what we're seeing.",
+        aiThread: makeInsightThread(
+          "This opener is strong but can lose the congrats framing entirely.",
+          "Funding opener",
+          "Remove the word 'congrats' — it signals you're a vendor who monitors Crunchbase. Lead with the operational reality instead.",
+          ["Cut congrats line", "Add specific pain", "Generate variant"],
+        ),
+      },
+      {
+        id: "sc-step-2",
+        channel: "LinkedIn",
+        title: "Process question",
+        dayLabel: "Day 3",
+        description: "Short question about how they're handling RevOps headcount post-raise.",
+        bodyPreview:
+          "Curious — are you expanding the RevOps function alongside the sales hire, or keeping it lean for now? Asking because the answer usually determines where friction surfaces first.",
+        aiThread: makeInsightThread(
+          "Good question framing. Could be tighter.",
+          "LinkedIn follow-up",
+          "The question is solid but two sentences is one too many for LinkedIn DMs. Trim to one sharp line.",
+          ["Tighten to one line", "Try different hook", "Make more casual"],
+        ),
+      },
+      {
+        id: "sc-step-3",
+        channel: "Email",
+        title: "Framework follow-up",
+        dayLabel: "Day 8",
+        description: "Send a relevant framework for post-Series C RevOps scaling with a soft CTA.",
+        bodyPreview:
+          "Following up — put together a short framework on how Series C teams typically restructure their outbound motion before the next hiring wave hits. Worth 5 minutes if the timing is right.",
+        aiThread: makeInsightThread(
+          "The framework offer is strong. Soften the CTA.",
+          "Follow-up framing",
+          "Replace '5 minutes' with 'a quick read' — it removes the calendar ask and lowers the commitment threshold.",
+          ["Soften CTA", "Add social proof", "Shorten email"],
+        ),
+      },
+    ],
   },
   {
     ...primaryCampaign,
@@ -520,6 +567,53 @@ export const campaigns: Campaign[] = [
     subtitle: "Signal-based motion for teams announcing category expansion or launch windows",
     updatedAgo: "Last edited 1 hr ago",
     matchCount: 1264,
+    sequence: [
+      {
+        id: "pl-step-1",
+        channel: "Email",
+        title: "Launch timing outreach",
+        dayLabel: "Day 1",
+        description: "Reference the product launch signal and connect it to outbound demand capture timing.",
+        bodyPreview:
+          "Hi [First Name], noticed [Company] just announced [Product/Category]. Launch windows are one of the highest-signal moments for outbound — the market is paying attention and pipeline usually accelerates if the motion is tight.",
+        aiThread: makeInsightThread(
+          "Good timing hook. The second sentence is too generic.",
+          "Launch opener",
+          "Replace 'pipeline usually accelerates' with a specific outcome: 'we typically see 2–3× more replies in the 30 days around a launch when the sequence is signal-anchored.'",
+          ["Add specific stat", "Shorten email", "Try different angle"],
+        ),
+      },
+      {
+        id: "pl-step-2",
+        channel: "LinkedIn",
+        title: "Category question",
+        dayLabel: "Day 4",
+        description: "Ask about their outbound strategy for the new category — positions you as knowledgeable.",
+        bodyPreview:
+          "Saw the launch — nice work. Curious how you're approaching outbound for the new category. Are you running separate sequences or blending it into the existing motion?",
+        aiThread: makeInsightThread(
+          "This touchpoint is well-positioned.",
+          "Category question",
+          "The question is good. Consider adding 'happy to share what we're seeing work' to give them a reason to respond beyond curiosity.",
+          ["Add value hook", "Make shorter", "Try voice note angle"],
+        ),
+      },
+      {
+        id: "pl-step-3",
+        channel: "Call",
+        title: "Launch window follow-up",
+        dayLabel: "Day 9",
+        description: "Call while the launch window is still active — time-sensitive framing works here.",
+        bodyPreview:
+          "Call note: product launch + category expansion signal. Mention that the launch window is typically 30–45 days and signal-based outbound performs best when started early in that window.",
+        aiThread: makeInsightThread(
+          "Good call framing. The urgency is real and legitimate.",
+          "Call direction",
+          "Lead with the window timing — 'still early in your launch window' — before anything else. It establishes relevance without being pushy.",
+          ["Write talk track", "Add objection handling", "Create voicemail"],
+        ),
+      },
+    ],
   },
 ];
 

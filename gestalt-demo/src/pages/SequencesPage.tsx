@@ -12,7 +12,7 @@ export default function SequencesPage() {
         <div className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Messaging</div>
         <h1 className="mt-3 text-[34px] font-semibold tracking-[-0.06em] text-foreground">Sequence library</h1>
         <p className="mt-2 max-w-[760px] text-[15px] text-muted-foreground">
-          Route-aware message steps that make the fake demo feel interactive, coachable, and operationally grounded.
+          Multi-channel sequences tied to the signals driving your outreach — editable, coachable, and AI-optimized.
         </p>
       </div>
 
